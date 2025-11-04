@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(//d/claude/**)",
+      "Bash(npm install:*)",
+      "Bash(mkdir:*)",
+      "Bash(npm run dev:*)",
+      "Bash(git config:*)",
+      "WebSearch",
+      "WebFetch(domain:resume.yowu.dev)",
+      "WebFetch(domain:github.com)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

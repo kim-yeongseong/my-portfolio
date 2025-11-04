@@ -1,0 +1,135 @@
+export interface Experience {
+  id: string;
+  company: string;
+  position: string;
+  period: string;
+  duration: string;
+  description: string;
+  responsibilities: string[];
+  techStack: string[];
+  current?: boolean;
+}
+
+export const experiences: Experience[] = [
+  {
+    id: "ijl-2024",
+    company: "주식회사 국제종합물류",
+    position: "전산/개발팀 선임연구원",
+    period: "2024.11 ~ 재직중",
+    duration: "재직중",
+    current: true,
+    description: "풀스택 개발자로서 Spring Boot + Vue.js 기반의 물류 시스템을 기술 스택 선정부터 아키텍처 설계, 프로젝트 환경 설정, 개발까지 모든 과정을 담당하고 있습니다.",
+    responsibilities: [
+      "기존 시스템(AS-IS) 유지보수 및 운영 - C# 기반 물류 시스템",
+      "신규 웹 기반 통합 물류 시스템(To-Be) 설계 및 개발",
+      "Backend: Spring Boot 3.x 기반 API 설계 및 비즈니스 로직 구현",
+      "Frontend: Vue 3 + TypeScript 기반 UI/UX 개발",
+      "Database: MySQL 및 MSSQL 활용 DB 설계 및 최적화",
+      "프로젝트 기획, 개발 일정 관리, 설계 문서 작성",
+      "Docker 기반 CI/CD 환경 구축",
+    ],
+    techStack: [
+      "Spring Boot 3.x",
+      "Vue 3",
+      "TypeScript",
+      "JPA",
+      "QueryDSL",
+      "MySQL",
+      "MSSQL",
+      "Redis",
+      "Docker",
+      "Spring Security",
+      "JWT",
+    ],
+  },
+  {
+    id: "allzensoft-2024",
+    company: "㈜올젠소프트",
+    position: "프리랜서",
+    period: "2024.08 ~ 2024.11",
+    duration: "4개월",
+    description: "NPS 연금 시스템 전자민원 파트 개발 및 결함 분석, ASIS 시스템 분석을 담당했습니다.",
+    responsibilities: [
+      "연금 시스템 구축 지원 프로젝트",
+      "전자민원 파트 개발 및 결함 수정",
+      "ASIS 시스템 분석 및 문서화",
+    ],
+    techStack: [
+      "Java",
+      "JSP",
+      "JavaScript",
+      "jQuery",
+      "NEXACRO",
+      "HTML5",
+      "CSS",
+    ],
+  },
+  {
+    id: "aroalabs-2023",
+    company: "아로아랩스",
+    position: "개발팀 대리",
+    period: "2023.07 ~ 2024.07",
+    duration: "1년 1개월",
+    description: "Backend 전반에 걸친 개발 및 프로젝트 구조 설계를 담당. 해상 물류 시스템의 클린 아키텍처 설계 및 EDI 시스템 구현.",
+    responsibilities: [
+      "클린 아키텍처 구조 설계 - 유지보수 및 확장성 향상",
+      "해상 물류 관련 로직 개발 및 최적화",
+      "EDI(전자 데이터 교환) 시스템 구현",
+      "Stowage Planning 개발 참여",
+      "팬스타크루즈 여객 예약 사이트 리뉴얼 백엔드 개발",
+      "Apache Tomcat 서버 관리",
+      "면접 진행 및 신입 사원 선발",
+      "Key Vault 설정 및 CI/CD 파이프라인 구축",
+    ],
+    techStack: [
+      "Go",
+      "Azure Database",
+      "Vue",
+      "Apache Tomcat",
+      "EDI",
+      "Clean Architecture",
+    ],
+  },
+  {
+    id: "mpls-2019",
+    company: "(주)엠피엘에스",
+    position: "솔루션사업팀 대리",
+    period: "2019.05 ~ 2023.06",
+    duration: "4년 2개월",
+    description: "본사 솔루션 메인 담당으로 eCargo(해상물류 WEB Booking 시스템) 개발 및 여러 프로젝트 개발 지원. 도재학교인원 교육 담당 및 신입사원 교육 진행.",
+    responsibilities: [
+      "eCargo 솔루션 메인 담당 - 해상물류 WEB Booking 시스템",
+      "여객시스템 바코드/QR 스캐너, 모바일 연동 탑승객 관리",
+      "도매상 관리시스템 바코드 발행 및 재고 관리",
+      "Spring Exception Resolver 재정의 및 WEBHOOK 연동",
+      "세틀 뱅크 API 연동 무통장 처리 데몬 개발",
+      "관세청 API(유니패스) 연동 BL 데이터 관리",
+      "바로빌 API 연동 카드 승인내역 e-HR 시스템 연동",
+      "알리고 API 연동 카톡, SMS 발송 기능",
+      "PG 연동 하이브리드 방식 개선",
+      "SVN에서 GIT로 이관 작업",
+      "panstar 이관 작업 지원 (10개 프로젝트)",
+      "Jenkins 설치 및 설정, CI/CD 구축",
+      "Spring Boot 기반 API 서버 템플릿 구축",
+      "도재학교인원 교육 담당, 신입사원 교육 진행",
+    ],
+    techStack: [
+      "Java",
+      "Spring",
+      "Spring Boot",
+      "MyBatis",
+      "JPA",
+      "MySQL",
+      "MSSQL",
+      "PHP",
+      "CodeIgniter",
+      "React",
+      "Node.js",
+      "jQuery",
+      "Git",
+      "SVN",
+      "Jenkins",
+      "Docker",
+    ],
+  },
+];
