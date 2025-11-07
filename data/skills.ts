@@ -1,18 +1,15 @@
 import { SkillCategory } from "@/types";
 
-export const skillCategories: SkillCategory[] = [
+// 핵심 스킬만 표시 (더보기 없이 한눈에 보이게)
+export const primarySkills: SkillCategory[] = [
   {
     category: "Backend",
     skills: [
-      "Java 17",
-      "Spring Boot 3.x",
-      "Spring MVC",
+      "Java",
+      "Spring Boot",
       "Spring Security",
       "JPA",
-      "QueryDSL",
-      "MyBatis",
       "Go",
-      "PHP",
       "Node.js",
     ],
   },
@@ -21,15 +18,8 @@ export const skillCategories: SkillCategory[] = [
     skills: [
       "Vue 3",
       "TypeScript",
-      "JavaScript",
-      "Vuetify",
-      "Pinia",
       "React",
-      "jQuery",
-      "HTML5",
-      "CSS3",
-      "AJAX",
-      "JSON",
+      "JavaScript",
     ],
   },
   {
@@ -37,55 +27,22 @@ export const skillCategories: SkillCategory[] = [
     skills: [
       "MySQL",
       "MSSQL",
-      "Azure Database",
       "Redis",
-      "Oracle",
-      "SQL",
-      "DBMS",
     ],
   },
   {
-    category: "DevOps & Tools",
+    category: "DevOps",
     skills: [
       "Docker",
       "Git",
       "Jenkins",
       "CI/CD",
-      "SVN",
-      "Apache Tomcat",
-      "Apache",
-      "AWS",
-      "Notion",
-      "DBDiagram.io",
-    ],
-  },
-  {
-    category: "API & Integration",
-    skills: [
-      "RESTful API",
-      "OpenFeign",
-      "Swagger",
-      "JWT",
-      "EDI",
-      "관세청 API (유니패스)",
-      "세틀뱅크 API",
-      "바로빌 API",
-      "알리고 API",
-      "PG 연동",
-      "SAP",
-    ],
-  },
-  {
-    category: "Security & Libraries",
-    skills: [
-      "Spring Security",
-      "Jasypt",
-      "Lucy-XSS",
-      "Quartz",
-      "Axios",
-      "CodeIgniter 4",
-      "GAUS",
-      "NEXACRO",
     ],
   },
 ];
+
+// 기타 스킬 (사용하지 않음 - 더보기 제거)
+export const secondarySkills: SkillCategory[] = [];
+
+// 하위 호환성을 위해 유지
+export const skillCategories: SkillCategory[] = primarySkills;

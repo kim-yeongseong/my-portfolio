@@ -30,7 +30,11 @@
       "Bash(taskkill:*)",
       "Bash(cmd.exe /c \"taskkill /F /PID 7148 & taskkill /F /PID 21996 & taskkill /F /PID 47580 & taskkill /F /PID 42516 & taskkill /F /PID 33952 & taskkill /F /PID 56080 & taskkill /F /PID 52340 & taskkill /F /PID 31472\")",
       "Bash(powershell -Command \"Stop-Process -Id 7148,21996,47580,42516,33952,56080,52340,31472 -Force\")",
-      "Bash(git remote set-url:*)"
+      "Bash(git remote set-url:*)",
+      "Bash(git pull:*)",
+      "Bash(git rebase:*)",
+      "Bash(tasklist:*)",
+      "Bash(powershell -Command \"Get-Process node | Stop-Process -Force\")"
     ],
     "deny": [],
     "ask": []
