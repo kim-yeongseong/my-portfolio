@@ -24,7 +24,6 @@ export const projects: Project[] = [
       "Vuetify",
       "Pinia",
     ],
-    githubUrl: "https://github.com/kim-yeongseong",
     date: "2024-11",
   },
   {

@@ -102,7 +102,7 @@ export default function Projects() {
                     onClick={() => toggleTechExpand(project.id)}
                     className="px-2.5 py-1 text-purple-700 dark:text-purple-400 hover:text-purple-800 dark:hover:text-purple-300 text-xs font-semibold transition-colors"
                   >
-                    {isTechExpanded ? "접기" : `+${project.tags.length - 8}`}
+                    {isTechExpanded ? "접기" : `+${project.tags.length - 8} 더보기`}
                   </button>
                 )}
               </div>

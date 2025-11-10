@@ -131,7 +131,7 @@ export default function Experience() {
                     onClick={() => toggleTechExpand(exp.id)}
                     className="px-2.5 py-1 text-blue-700 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 text-xs font-semibold transition-colors"
                   >
-                    {isTechExpanded ? "접기" : `+${exp.techStack.length - 8}`}
+                    {isTechExpanded ? "접기" : `+${exp.techStack.length - 8} 더보기`}
                   </button>
                 )}
               </div>
