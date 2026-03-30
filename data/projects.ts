@@ -9,7 +9,7 @@ export const projects: Project[] = [
     description:
       "Spring Boot와 Vue 3 기반의 웹 통합 물류 시스템을 처음부터 설계하고 개발. 풀스택 개발자로서 기술 스택 선정, 아키텍처 설계, 프로젝트 환경 설정부터 개발까지 전 과정 담당.",
     longDescription:
-      "기존 C# 기반 물류 시스템(AS-IS)을 바탕으로 최신 웹 기반 통합 시스템(포워딩 플랫폼)으로 전환 개발하는 확장 프로젝트입니다. Backend는 Spring Boot 3.x, Spring Security, JPA, QueryDSL, OpenFeign, Redis, Quartz를 활용한 API 설계 및 비즈니스 로직 구현을 담당했습니다. Frontend는 Vue 3, TypeScript, Vuetify, Pinia, Axios를 사용하여 현대적인 UI/UX를 개발했습니다. MySQL 및 MSSQL을 활용한 DB 설계 및 최적화, JWT/Spring Security/Jasypt/Lucy-XSS를 통한 보안 구현, Docker 기반 CI/CD 환경 구축, DBDiagram.io와 Notion을 활용한 프로젝트 문서 및 일정 관리를 진행했습니다.",
+      "기존 C# 기반 물류 시스템(AS-IS)의 경험을 바탕으로 최신 웹 기반 통합 시스템(포워딩 플랫폼)으로 확장 개발하는 프로젝트입니다. Backend는 Spring Boot 3.x, Spring Security, JPA, QueryDSL, OpenFeign, Redis, Quartz를 활용한 API 설계 및 비즈니스 로직 구현을 담당했습니다. Frontend는 Vue 3, TypeScript, Vuetify, Pinia, Axios를 사용하여 현대적인 UI/UX를 개발했습니다. MySQL 및 MSSQL을 활용한 DB 설계 및 최적화, JWT/Spring Security/Jasypt/Lucy-XSS를 통한 보안 구현, Docker 기반 CI/CD 환경 구축, DBDiagram.io와 Notion을 활용한 프로젝트 문서 및 일정 관리를 진행했습니다.",
     tags: [
       "Spring Boot 3.x",
       "Vue 3",
