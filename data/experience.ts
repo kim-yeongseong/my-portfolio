@@ -20,7 +20,7 @@ export const experiences: Experience[] = [
     current: true,
     description: "풀스택 개발자로서 Spring Boot + Vue.js 기반의 물류 시스템 (포워딩 플랫폼) 을 기술 스택 선정부터 아키텍처 설계, 프로젝트 환경 설정, 개발까지 모든 과정을 담당하고 있습니다.",
     responsibilities: [
-      "신규 웹 기반 통합 물류 시스템(To-Be) 설계 및 개발 주도",
+      "신규 포워딩 플랫폼 (웹 기반 통합 물류 시스템) 설계 및 개발 주도",
       "Spring Boot 3.x 기반 RESTful API 설계 및 비즈니스 로직 구현",
       "Vue 3 + TypeScript 기반 현대적인 UI/UX 개발",
       "MySQL 및 MSSQL을 활용한 DB 설계 및 쿼리 최적화",
