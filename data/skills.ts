@@ -1,25 +1,28 @@
 import { SkillCategory } from "@/types";
 
-// 핵심 스킬만 표시 (더보기 없이 한눈에 보이게)
+// 핵심 스킬 — 실무에서 주력으로 사용 중인 스택
 export const primarySkills: SkillCategory[] = [
   {
     category: "Backend",
     skills: [
-      "Java",
-      "Spring Boot",
-      "Spring Security",
-      "JPA",
+      "Java 17",
+      "Spring Boot 3.x",
+      "Spring Security (JWT)",
+      "JPA / QueryDSL",
       "Go",
+      "Python",
       "Node.js",
     ],
   },
   {
     category: "Frontend",
     skills: [
-      "Vue 3",
-      "TypeScript",
+      "Vue 3 / TypeScript",
+      "Next.js 15",
       "React",
-      "JavaScript",
+      "Vuetify / Pinia",
+      "Tailwind CSS",
+      "PWA",
     ],
   },
   {
@@ -27,16 +30,29 @@ export const primarySkills: SkillCategory[] = [
     skills: [
       "MySQL",
       "MSSQL",
+      "PostgreSQL (Supabase)",
       "Redis",
     ],
   },
   {
-    category: "DevOps",
+    category: "DevOps & Infra",
     skills: [
       "Docker",
-      "Git",
       "Jenkins",
+      "GitHub Actions",
+      "Vercel",
+      "Git",
       "CI/CD",
+    ],
+  },
+  {
+    category: "AI 협업 도구",
+    skills: [
+      "Claude Code (주력)",
+      "Cursor",
+      "GitHub Copilot",
+      "CLAUDE.md 컨텍스트 설계",
+      "프롬프트 엔지니어링",
     ],
   },
 ];
