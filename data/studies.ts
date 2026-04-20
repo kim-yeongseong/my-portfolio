@@ -2,6 +2,33 @@ import { Study } from "@/types";
 
 export const studies: Study[] = [
   {
+    id: "credit-bank-cs",
+    title: "학점은행제 학사 학위 과정 (휴넷 - 컴퓨터공학과)",
+    description:
+      "고등학교 졸업 후 현장에서 개발자로 성장해왔지만, 실무 경험과 함께 기초 CS 이론을 다시 다지고 공인된 역량을 갖추기 위해 학점은행제 학사 학위 취득 과정을 진행 중입니다. 장기적으로는 학점 취득 후 AI 개발자 과정 등으로 편입 및 심화 교육을 이어가는 것이 목표입니다.",
+    category: "진행 중",
+    tags: ["학점은행제", "컴퓨터공학", "CS 기초", "휴넷"],
+    date: "진행 중",
+  },
+  {
+    id: "engineer-info-processing",
+    title: "정보처리기사 (필기 합격, 실기 준비 중)",
+    description:
+      "국가 공인 자격인 정보처리기사 필기 시험에 합격하였으며, 현재 실기 시험을 준비 중입니다. 경력만으로 쌓아온 실무 역량 위에 체계적인 CS 이론과 국가 공인 자격을 더해, 근본부터 탄탄한 개발자로 성장하고자 합니다.",
+    category: "진행 중",
+    tags: ["정보처리기사", "국가기술자격", "한국산업인력공단"],
+    date: "필기 합격 · 실기 준비 중",
+  },
+  {
+    id: "ai-collaboration",
+    title: "AI 협업 개발 워크플로우 정착",
+    description:
+      "Claude Code, Cursor, GitHub Copilot 등 AI 도구를 실제 프로덕션 개발에 활용하며 협업 워크플로우를 설계·정착시켰습니다. CLAUDE.md 컨텍스트 문서 체계를 3개 리포지토리에 적용하고, 1,000줄 규모의 SKILL.md 프롬프트 엔지니어링을 통해 개인 프로젝트 '마이픽 AI'의 AI 에이전트를 오케스트레이션하고 있습니다.",
+    category: "자기개발",
+    tags: ["Claude Code", "Cursor", "AI 협업", "프롬프트 엔지니어링", "CLAUDE.md"],
+    date: "2026-01 ~ 진행 중",
+  },
+  {
     id: "kosmo-java-training",
     title: "Java 개발자 양성과정",
     description:

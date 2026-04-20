@@ -41,27 +41,40 @@ export default function Experience() {
         Experience
       </motion.h2>
 
-      <div className="space-y-4 sm:space-y-6">
-        {experiences.map((exp, index) => {
-          const isExpanded = expandedIds.has(exp.id);
-          const isTechExpanded = expandedTechIds.has(exp.id);
-          const visibleResponsibilities = isExpanded
-            ? exp.responsibilities
-            : exp.responsibilities.slice(0, 3);
-          const hasMore = exp.responsibilities.length > 3;
-          const visibleTechStack = isTechExpanded
-            ? exp.techStack
-            : exp.techStack.slice(0, 8);
-          const hasMoreTech = exp.techStack.length > 8;
+      <div className="relative">
+        {/* 타임라인 세로 라인 */}
+        <div className="absolute left-3 sm:left-4 top-2 bottom-2 w-0.5 bg-gradient-to-b from-blue-400 via-blue-300 to-gray-300 dark:from-blue-500 dark:via-blue-600 dark:to-gray-600" />
 
-          return (
-            <motion.div
-              key={exp.id}
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: index * 0.1 }}
-              className="bg-white dark:bg-gray-800 border-2 border-gray-200 dark:border-gray-700 rounded-xl p-4 sm:p-5 hover:border-blue-300 dark:hover:border-blue-500 hover:shadow-lg transition-all"
-            >
+        <div className="space-y-4 sm:space-y-6">
+          {experiences.map((exp, index) => {
+            const isExpanded = expandedIds.has(exp.id);
+            const isTechExpanded = expandedTechIds.has(exp.id);
+            const visibleResponsibilities = isExpanded
+              ? exp.responsibilities
+              : exp.responsibilities.slice(0, 3);
+            const hasMore = exp.responsibilities.length > 3;
+            const visibleTechStack = isTechExpanded
+              ? exp.techStack
+              : exp.techStack.slice(0, 8);
+            const hasMoreTech = exp.techStack.length > 8;
+
+            return (
+              <motion.div
+                key={exp.id}
+                initial={{ opacity: 0, x: 20 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true, margin: "-50px" }}
+                transition={{ duration: 0.5, delay: index * 0.1 }}
+                className="relative pl-8 sm:pl-10"
+              >
+                {/* 타임라인 도트 */}
+                <div className={`absolute left-1.5 sm:left-2.5 top-4 w-3 h-3 rounded-full border-2 ${
+                  exp.current
+                    ? "bg-green-500 border-green-300 dark:border-green-700 shadow-lg shadow-green-500/50 animate-pulse"
+                    : "bg-blue-500 border-blue-200 dark:border-blue-800"
+                }`} />
+
+                <div className="bg-white dark:bg-gray-800 border-2 border-gray-200 dark:border-gray-700 rounded-xl p-4 sm:p-5 hover:border-blue-300 dark:hover:border-blue-500 hover:shadow-lg transition-all">
               <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between mb-3 gap-2">
                 <div className="flex-1">
                   <h3 className="text-base sm:text-lg font-bold text-gray-900 dark:text-white">
@@ -135,9 +148,11 @@ export default function Experience() {
                   </button>
                 )}
               </div>
-            </motion.div>
-          );
-        })}
+            </div>
+          </motion.div>
+        );
+      })}
+        </div>
       </div>
     </section>
   );

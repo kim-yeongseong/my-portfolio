@@ -1,9 +1,16 @@
 "use client";
 
-import { Github, Mail, Target, User, Code2 } from "lucide-react";
+import { Github, Mail, Target, User, Code2, Sparkles, Briefcase, FolderGit2, GraduationCap } from "lucide-react";
 import Image from "next/image";
 import { profile } from "@/data/profile";
 import { primarySkills } from "@/data/skills";
+
+const navItems = [
+  { id: "featured-project", label: "Featured (마이픽 AI)", icon: Sparkles, color: "purple" },
+  { id: "experience", label: "Experience", icon: Briefcase, color: "blue" },
+  { id: "projects", label: "Projects at Work", icon: FolderGit2, color: "blue" },
+  { id: "learning", label: "Learning & Growth", icon: GraduationCap, color: "emerald" },
+];
 
 export default function Sidebar() {
   return (
@@ -39,8 +46,31 @@ export default function Sidebar() {
             {profile.role}
           </p>
           <p className="text-xs sm:text-sm text-gray-700 dark:text-gray-300 font-medium">
-            6년+ 경력
+            7년차 · AI 협업 개발자
           </p>
+        </div>
+
+        {/* Quick Nav */}
+        <div className="mb-3 pb-3 border-b-2 border-blue-200 dark:border-blue-700">
+          <h3 className="text-base font-bold text-gray-900 dark:text-white mb-1.5 flex items-center gap-1.5">
+            <span className="text-blue-600 dark:text-blue-400">☰</span>
+            Quick Nav
+          </h3>
+          <nav className="space-y-1">
+            {navItems.map((item) => {
+              const Icon = item.icon;
+              return (
+                <a
+                  key={item.id}
+                  href={`#${item.id}`}
+                  className="flex items-center gap-2 text-xs text-gray-700 dark:text-gray-300 hover:text-blue-700 dark:hover:text-blue-400 transition-all bg-white dark:bg-gray-700 px-2 py-1.5 rounded-lg hover:bg-blue-50 dark:hover:bg-blue-900/30 shadow-sm hover:shadow-md cursor-pointer border border-gray-200 dark:border-gray-600 hover:border-blue-300 dark:hover:border-blue-500 font-semibold"
+                >
+                  <Icon className="w-3.5 h-3.5 flex-shrink-0" />
+                  <span>{item.label}</span>
+                </a>
+              );
+            })}
+          </nav>
         </div>
 
         {/* Contact */}

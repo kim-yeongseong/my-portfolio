@@ -27,7 +27,7 @@ export default function Projects() {
         className="text-xl sm:text-2xl font-bold text-gray-900 dark:text-white mb-4 sm:mb-6 pb-2 sm:pb-3 border-b-2 border-blue-200 dark:border-blue-700 flex items-center gap-2"
       >
         <FolderGit2 className="w-5 h-5 sm:w-6 sm:h-6 text-blue-600 dark:text-blue-400" />
-        Projects
+        Projects at Work
       </motion.h2>
 
       <div className="space-y-4">
