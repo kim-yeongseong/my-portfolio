@@ -1,6 +1,8 @@
 import Sidebar from "@/components/Sidebar";
+import FeaturedProject from "@/components/FeaturedProject";
 import Experience from "@/components/Experience";
 import Projects from "@/components/Projects";
+import Learning from "@/components/Learning";
 import { ThemeToggle } from "@/components/ThemeToggle";
 
 export default function Home() {
@@ -16,8 +18,17 @@ export default function Home() {
 
             {/* Main Content - Mobile: normal flow, Desktop: scrollable */}
             <div className="flex-1 lg:h-full lg:overflow-y-auto scrollbar-smooth">
+              {/* 1. Featured: 개인 사이드 프로젝트 (마이픽 AI) — 최상단 임팩트 */}
+              <FeaturedProject />
+
+              {/* 2. Experience: 회사 경력 타임라인 */}
               <Experience />
+
+              {/* 3. Projects at Work: 회사에서 수행한 프로젝트들 */}
               <Projects />
+
+              {/* 4. Learning & Growth: 학점은행제, 정보처리기사, AI 협업 등 */}
+              <Learning />
             </div>
           </div>
         </div>
@@ -25,7 +36,7 @@ export default function Home() {
 
       {/* Simple Footer */}
       <footer className="py-4 text-center text-xs text-gray-600 dark:text-gray-400 border-t border-gray-200 dark:border-gray-700 flex-shrink-0">
-        <p>© 2024 김영성. All rights reserved.</p>
+        <p>© 2026 김영성. All rights reserved.</p>
       </footer>
 
       <ThemeToggle />
