@@ -1,6 +1,5 @@
 import Sidebar from "@/components/Sidebar";
 import Hero from "@/components/Hero";
-import Stats from "@/components/Stats";
 import FeaturedProject from "@/components/FeaturedProject";
 import Experience from "@/components/Experience";
 import Projects from "@/components/Projects";
@@ -27,19 +26,16 @@ export default function Home() {
               {/* 1. Hero — 첫 화면 임팩트 */}
               <Hero />
 
-              {/* 2. Stats — 통계 대시보드 (카운트업 애니메이션) */}
-              <Stats />
-
-              {/* 3. Featured: 개인 사이드 프로젝트 (마이픽 AI) */}
+              {/* 2. Featured: 개인 사이드 프로젝트 (마이픽 AI) */}
               <FeaturedProject />
 
-              {/* 4. Experience: 회사 경력 */}
+              {/* 3. Experience: 회사 경력 */}
               <Experience />
 
-              {/* 5. Projects at Work: 회사에서 수행한 프로젝트들 */}
+              {/* 4. Projects at Work: 회사에서 수행한 프로젝트들 */}
               <Projects />
 
-              {/* 6. Learning & Growth: 학점은행제, 정보처리기사, AI 협업 */}
+              {/* 5. Learning & Growth: 학점은행제, 정보처리기사, AI 협업 */}
               <Learning />
             </div>
           </div>
