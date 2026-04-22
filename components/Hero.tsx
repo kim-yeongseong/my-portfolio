@@ -11,10 +11,10 @@ import { motion } from "framer-motion";
  */
 export default function Hero() {
   const tags = [
-    { label: "7년차", color: "blue" },
-    { label: "풀스택", color: "indigo" },
+    { label: "풀스택 7년차", color: "blue" },
+    { label: "물류·해운 도메인 7년", color: "emerald" },
+    { label: "B2B SaaS", color: "indigo" },
     { label: "AI 협업", color: "purple" },
-    { label: "물류·해운", color: "emerald" },
   ];
 
   const colorClasses: Record<string, string> = {
@@ -53,7 +53,8 @@ export default function Hero() {
           transition={{ duration: 0.4, delay: 0.1 }}
           className="text-sm sm:text-base text-gray-700 dark:text-gray-300 font-bold mb-3"
         >
-          변화에 두려워하지 않는, 궁금증 많은 풀스택 개발자
+          <span className="text-emerald-700 dark:text-emerald-400">물류·해운 도메인 7년</span>,
+          변화에 두려워하지 않는 풀스택 개발자
         </motion.p>
 
         {/* 태그 칩 */}
@@ -80,9 +81,10 @@ export default function Hero() {
           transition={{ duration: 0.4, delay: 0.2 }}
           className="text-xs sm:text-sm text-gray-600 dark:text-gray-400 leading-relaxed mb-4 max-w-2xl"
         >
-          작은 질문과 이슈 속에서도 이유와 원인을 끝까지 따라가며 해결합니다.
-          AI를 <span className="font-semibold text-purple-700 dark:text-purple-400">&ldquo;함께 리뷰하고 토론하는 협업 파트너&rdquo;</span>로 활용하며,
-          기술 역량 이후에는 협업과 의사소통이 더 중요해지는 시대를 살고 있다고 믿습니다.
+          <span className="font-semibold text-emerald-700 dark:text-emerald-400">해상물류·포워딩 도메인</span>에서
+          7년째 복잡한 비즈니스 로직을 코드로 풀어내고 있습니다.
+          작은 질문도 끝까지 따라가며, AI를 <span className="font-semibold text-purple-700 dark:text-purple-400">&ldquo;함께 리뷰하고 토론하는 협업 파트너&rdquo;</span>로 활용합니다.
+          기술 역량 이후에는 협업과 의사소통이 더 중요해지는 시대라고 믿습니다.
         </motion.p>
 
         {/* CTA 버튼 그룹 */}

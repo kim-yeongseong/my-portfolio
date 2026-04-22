@@ -1,7 +1,7 @@
 "use client";
 
 import { experiences } from "@/data/experience";
-import { Briefcase, ChevronDown, ChevronUp } from "lucide-react";
+import { Briefcase, ChevronDown, ChevronUp, Ship, Anchor, Package } from "lucide-react";
 import { motion } from "framer-motion";
 import { useState } from "react";
 
@@ -40,6 +40,82 @@ export default function Experience() {
         <Briefcase className="w-5 h-5 sm:w-6 sm:h-6 text-blue-600 dark:text-blue-400" />
         Experience
       </motion.h2>
+
+      {/* 물류·해운 도메인 타임라인 카드 — 7년 연속 경력 어필 */}
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.5, delay: 0.1 }}
+        className="mb-5 sm:mb-6 rounded-xl border-2 border-emerald-200 dark:border-emerald-800 bg-gradient-to-br from-emerald-50 via-teal-50/40 to-white dark:from-emerald-950/40 dark:via-teal-950/30 dark:to-gray-800 p-4 sm:p-5 overflow-hidden"
+      >
+        <div className="flex items-center gap-2 mb-3">
+          <Ship className="w-4 h-4 sm:w-5 sm:h-5 text-emerald-600 dark:text-emerald-400" />
+          <h3 className="text-sm sm:text-base font-black text-emerald-800 dark:text-emerald-300">
+            물류·해운 도메인 7년 연속
+          </h3>
+          <span className="ml-auto text-[10px] sm:text-xs font-bold text-emerald-700 dark:text-emerald-400 bg-emerald-100 dark:bg-emerald-900/50 px-2 py-0.5 rounded-full whitespace-nowrap">
+            도메인 전문성
+          </span>
+        </div>
+
+        {/* 3개 회사 흐름 — 모바일은 세로, 데스크톱은 가로 */}
+        <div className="flex flex-col sm:flex-row gap-2 sm:gap-1.5 mb-3">
+          {/* MPLS */}
+          <div className="flex-1 bg-white dark:bg-gray-800 rounded-lg p-2.5 border border-emerald-100 dark:border-emerald-900/50 min-w-0">
+            <div className="flex items-center gap-1.5 mb-0.5">
+              <Anchor className="w-3 h-3 text-emerald-600 dark:text-emerald-400 flex-shrink-0" />
+              <p className="text-xs font-bold text-gray-900 dark:text-white truncate">(주)엠피엘에스</p>
+            </div>
+            <p className="text-[10px] text-gray-600 dark:text-gray-400 mb-0.5 truncate">해상물류 · eCargo WEB Booking</p>
+            <p className="text-[10px] font-black text-emerald-700 dark:text-emerald-400">
+              2019.05 – 2023.06 <span className="text-gray-500">· 4년 2개월</span>
+            </p>
+          </div>
+
+          {/* 화살표 (데스크톱만) */}
+          <div className="hidden sm:flex items-center justify-center text-emerald-400 dark:text-emerald-600 text-base flex-shrink-0 px-0.5">
+            →
+          </div>
+
+          {/* 아로아랩스 */}
+          <div className="flex-1 bg-white dark:bg-gray-800 rounded-lg p-2.5 border border-emerald-100 dark:border-emerald-900/50 min-w-0">
+            <div className="flex items-center gap-1.5 mb-0.5">
+              <Anchor className="w-3 h-3 text-emerald-600 dark:text-emerald-400 flex-shrink-0" />
+              <p className="text-xs font-bold text-gray-900 dark:text-white truncate">아로아랩스</p>
+            </div>
+            <p className="text-[10px] text-gray-600 dark:text-gray-400 mb-0.5 truncate">해상물류 · 클린 아키텍처</p>
+            <p className="text-[10px] font-black text-emerald-700 dark:text-emerald-400">
+              2023.07 – 2024.07 <span className="text-gray-500">· 1년 1개월</span>
+            </p>
+          </div>
+
+          <div className="hidden sm:flex items-center justify-center text-emerald-400 dark:text-emerald-600 text-base flex-shrink-0 px-0.5">
+            →
+          </div>
+
+          {/* 국제종합물류 — 현재 */}
+          <div className="flex-1 bg-gradient-to-br from-green-50 to-emerald-50 dark:from-emerald-950/60 dark:to-teal-950/60 rounded-lg p-2.5 border-2 border-green-400 dark:border-green-600 shadow-sm min-w-0">
+            <div className="flex items-center gap-1.5 mb-0.5">
+              <Package className="w-3 h-3 text-green-600 dark:text-green-400 flex-shrink-0" />
+              <p className="text-xs font-bold text-gray-900 dark:text-white truncate">국제종합물류</p>
+              <span className="text-[9px] font-black bg-green-500 text-white px-1 py-0.5 rounded-sm animate-pulse flex-shrink-0">
+                현재
+              </span>
+            </div>
+            <p className="text-[10px] text-gray-600 dark:text-gray-400 mb-0.5 truncate">포워딩 · B2B SaaS (ILIC)</p>
+            <p className="text-[10px] font-black text-green-700 dark:text-green-400">
+              2024.11 – 진행 중 <span className="text-gray-500">· 1년 6개월+</span>
+            </p>
+          </div>
+        </div>
+
+        <p className="text-xs sm:text-[13px] text-gray-700 dark:text-gray-300 leading-relaxed">
+          <span className="font-bold text-emerald-800 dark:text-emerald-300">해상물류 5.3년 + 포워딩 1.5년</span> — 복잡한 물류 비즈니스 로직을
+          코드로 풀어내는 도메인 깊이를 쌓아왔습니다. 특정 산업군을 깊게 아는 것은
+          단순 개발 역량을 넘어선 <span className="font-semibold">실무 문제 해결력</span>으로 이어집니다.
+        </p>
+      </motion.div>
 
       <div className="relative">
         {/* 타임라인 세로 라인 */}
