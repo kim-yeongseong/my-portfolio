@@ -23,17 +23,17 @@ export default function Home() {
 
             {/* Main Content - Mobile: normal flow, Desktop: scrollable */}
             <div className="flex-1 lg:h-full lg:overflow-y-auto scrollbar-smooth">
-              {/* 1. Hero — 첫 화면 임팩트 */}
+              {/* 1. Hero — 첫 화면 임팩트 (물류·해운 도메인 7년 포지셔닝) */}
               <Hero />
 
-              {/* 2. Featured: 개인 사이드 프로젝트 (마이픽 AI) */}
-              <FeaturedProject />
-
-              {/* 3. Experience: 회사 경력 */}
+              {/* 2. Experience: 회사 경력 (도메인 타임라인 + 경력) */}
               <Experience />
 
-              {/* 4. Projects at Work: 회사에서 수행한 프로젝트들 */}
+              {/* 3. Projects at Work: 회사에서 수행한 프로젝트들 */}
               <Projects />
+
+              {/* 4. Featured: 개인 사이드 프로젝트 (마이픽 AI — 본업 위에 AI 확장) */}
+              <FeaturedProject />
 
               {/* 5. Learning & Growth: 학점은행제, 정보처리기사, AI 협업 */}
               <Learning />
