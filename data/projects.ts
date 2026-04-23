@@ -10,9 +10,9 @@ export const projects: Project[] = [
     title: "ILIC — 물류 포워딩 B2B SaaS 플랫폼",
     period: "2024.11 ~ 현재",
     description:
-      "포워더·화주·파트너 3개 사용자 타입 지원 멀티테넌트 SaaS. 22개 업무 도메인, 3개 리포지토리(백엔드+백오피스+프론트오피스) 1인 풀스택 단독 운영. 3명 소수 팀에서 AI 협업 기반 자동화 워크플로우 설계·정착.",
+      "포워더·화주·파트너 3개 사용자 타입을 지원하는 멀티테넌트 SaaS. 22개 업무 도메인, 3개 리포지토리(백엔드+백오피스+프론트오피스)를 풀스택으로 개발 중. 3명 소수 팀에서 Claude Code를 도입해 함께 사용하는 워크플로우를 만들어 쓰고 있습니다.",
     longDescription:
-      "국제종합물류의 기존 C# 기반 레거시 물류 시스템을 Spring Boot + Vue 3 기반 통합 플랫폼으로 현대화하는 To-Be 프로젝트입니다. 기술 스택 선정부터 아키텍처 설계, 개발, 배포까지 단독 수행했으며 현재 MVP 완성 후 내부 테스트 단계입니다. Backend는 Java 17 + Spring Boot 3.3.5 + JPA + QueryDSL 5 + Spring Security(JWT) + OpenFeign + Quartz + ShedLock + MySQL 8 + Redis로 구성했고, Frontend는 Vue 3.5 + TypeScript + Vite + Pinia + Vuetify + Vue-i18n(다국어) + Vee-Validate + TipTap + ApexCharts를 활용했습니다. 아키텍처는 레이어 의존 방향 강제(api → domain → global), Multi-Datasource(biz + common 2개 DB), QueryDSL Custom Repository 3단 구조, Feign Client 외부 연동 추상화로 설계했습니다. 관세청·환율·은행·다국어 SMS 외부 API 연동, SSE 기반 실시간 인앱 알림을 구현했습니다. AI 협업 자동화로 Claude Code 공통 컨텍스트(CLAUDE.md) 체계를 설계해 3개 리포지토리에 정착시켰고, 다국어 i18n·DB 스키마·권한 동기화 등 업무 스크립트 7종을 만들어 3명 소수 팀의 생산성을 극대화했습니다. 기술 기획 문서·개발 일지·연구 성과 문서를 주도적으로 작성해 회사의 연구전담부서 지정에 기여했고, 선임연구원으로 채택되어 연구 전담 포지션에서 근무 중입니다.",
+      "국제종합물류의 기존 C# 기반 레거시 물류 시스템을 Spring Boot + Vue 3 기반 통합 플랫폼으로 현대화하는 To-Be 프로젝트입니다. 현재 MVP 완성 후 내부 테스트 단계입니다. Backend는 Java 17 + Spring Boot 3.3.5 + JPA + QueryDSL 5 + Spring Security(JWT) + OpenFeign + Quartz + ShedLock + MySQL 8 + Redis로 구성했고, Frontend는 Vue 3.5 + TypeScript + Vite + Pinia + Vuetify + Vue-i18n(다국어) + Vee-Validate + TipTap + ApexCharts를 활용했습니다. 아키텍처는 레이어 의존 방향 강제(api → domain → global), Multi-Datasource(biz + common 2개 DB), QueryDSL Custom Repository 3단 구조, Feign Client 외부 연동 추상화로 설계했습니다. 관세청·환율·은행·다국어 SMS 외부 API 연동, SSE 기반 실시간 인앱 알림을 구현했습니다. Claude Code 공통 컨텍스트(CLAUDE.md)를 작성해 3개 리포지토리에 적용했고, 다국어 i18n·DB 스키마·권한 동기화 등 반복 업무용 스크립트 7종을 만들어 팀에서 함께 사용하고 있습니다.",
     tags: [
       "Spring Boot 3.3.5",
       "Vue 3.5",

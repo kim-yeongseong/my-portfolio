@@ -21,11 +21,11 @@ export const studies: Study[] = [
   },
   {
     id: "ai-collaboration",
-    title: "AI 협업 개발 워크플로우 정착",
+    title: "Claude Code 기반 개발 워크플로우 활용",
     description:
-      "Claude Code, Cursor, GitHub Copilot 등 AI 도구를 실제 프로덕션 개발에 활용하며 협업 워크플로우를 설계·정착시켰습니다. CLAUDE.md 컨텍스트 문서 체계를 3개 리포지토리에 적용하고, 1,000줄 규모의 SKILL.md 프롬프트 엔지니어링을 통해 개인 프로젝트 '마이픽 AI'의 AI 에이전트를 오케스트레이션하고 있습니다.",
+      "Claude Code, Cursor, GitHub Copilot 등 AI 도구를 실제 프로덕션 개발에 적극 활용하고 있습니다. 회사 3개 리포지토리에 CLAUDE.md 컨텍스트 문서를 작성해 적용했고, 개인 프로젝트 '마이픽 AI'에서는 SKILL.md(약 1,000줄)에 분석 절차·검증 규칙·실패 처리를 정리해 Claude Scheduled Task가 매일 일관된 결과를 내도록 사용하고 있습니다.",
     category: "자기개발",
-    tags: ["Claude Code", "Cursor", "AI 협업", "프롬프트 엔지니어링", "CLAUDE.md"],
+    tags: ["Claude Code", "Cursor", "AI 협업", "CLAUDE.md", "SKILL.md"],
     date: "2026-01 ~ 진행 중",
   },
   {
