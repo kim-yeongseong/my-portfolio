@@ -10,9 +10,9 @@ export const sideProjects: Project[] = [
     title: "마이픽 AI (MyPick AI)",
     period: "2026.01 ~ 운영 중",
     description:
-      "KOSPI/KOSDAQ 3,000개 종목을 AI가 매일 자동 분석해 전략별 추천 종목과 푸시 알림을 제공하는 PWA 기반 웹앱. 기획·풀스택 개발·배포·운영 전 사이클 단독 수행. 20~30명 베타 운영 중.",
+      "마이픽 AI (MyPick AI) - 한국 주식 AI 분석 시스템. KOSPI + KOSDAQ 3,000개 종목을 AI가 매일 자동 분석해 전략별 추천 종목과 푸시 알림을 제공하는 PWA 기반 웹앱. 카카오 OAuth 기반 멀티유저 환경에서 현재 20~30명 규모로 베타 운영 중. 혼자 만든 사이드 프로젝트. 기획부터 배포·운영까지 직접 진행 중이며, Claude Code를 적극 활용해서 1인 개발의 속도를 끌어올렸습니다.",
     longDescription:
-      "Claude Scheduled Task로 AI 에이전트를 오케스트레이션해 하루 2회(07:35/17:35 KST) 자동 분석을 무인 운영하는 시스템입니다. GitHub Actions 파이프라인(Python + FinanceDataReader + Naver Finance API)으로 3,000개 종목의 OHLCV·기술지표·펀더멘탈을 수집하여 Supabase에 저장 → Claude 에이전트가 매크로 지표(FDR 해외지수·환율)와 뉴스 감성 분류를 거쳐 3전략(공격/균형/안정) + AI 프리픽 = 하루 12종목을 선정 → Firebase FCM으로 구독 유저에게 즉시 알림을 발송합니다. SKILL.md(AI 프롬프트) 1,000줄 규모 엔지니어링으로 뉴스 수집 3분할, 감성 분류, 데이터 신선도 검증, 매크로 템플릿 자동 생성, 실패 복구·중복 제거까지 프롬프트 레벨에서 처리합니다. Next.js 15 App Router + Supabase RLS로 카카오 OAuth 기반 멀티테넌트 아키텍처를 구현했고, PWA로 앱처럼 설치 가능합니다. Vercel(Free) + Supabase(Free) + Firebase(Spark) + GitHub Actions 무료 한도로 100% 무료 인프라 위에 실서비스를 운영 중입니다.",
+      "1. 데이터 수집 (GitHub Actions · 평일 15:30 KST) — Python 파이프라인 실행 → FinanceDataReader + Naver Finance API로 3,000개 종목의 OHLCV, 기술지표, 펀더멘탈 수집 → Supabase PostgreSQL에 일일 후보 종목 저장. 2. AI 심층 분석 (Claude Scheduled Task · 매일 07:35, 17:35 KST) — 자동화 에이전트가 Supabase에서 후보 데이터 조회 → 매크로 지표(FDR 해외지수, 환율) + 뉴스 수집 및 감성 분류 → 전략별(공격/균형/안정) + AI 프리픽 총 12종목 AI 선정 → 매수가, 손절가, 리스크 등급, 3줄 분석 자동 생성 → Supabase에 분석 결과 저장. 3. 실시간 알림 (Firebase FCM) — 분석 완료 즉시 구독 유저에게 푸시 알림 자동 발송, 사용자별 알림 설정(마스터/AI분석완료/종목함) 지원. 4. 사용자 접근 (Next.js 15 PWA · Vercel 자동 배포) — 카카오 OAuth 로그인 → Supabase RLS로 사용자별 격리 → 개인 종목함 자동 분석, PWA로 앱처럼 설치 가능. SKILL.md(약 1,000줄)에 분석 절차·검증 규칙·실패 처리·중복 제거 로직을 정리해 매번 일관된 형식으로 결과가 나오도록 구성했습니다. 100% 무료 인프라 구축 — Vercel(Free) + Supabase(Free) + Firebase(Spark) + GitHub Actions 무료 한도 + Claude Code 개인 구독만으로 실서비스 구축.",
     tags: [
       "Next.js 15",
       "TypeScript",

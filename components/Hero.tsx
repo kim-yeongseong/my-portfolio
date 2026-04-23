@@ -53,8 +53,8 @@ export default function Hero() {
           transition={{ duration: 0.4, delay: 0.1 }}
           className="text-sm sm:text-base text-gray-700 dark:text-gray-300 font-bold mb-3"
         >
-          <span className="text-emerald-700 dark:text-emerald-400">물류·해운 도메인 7년</span>,
-          변화에 두려워하지 않는 풀스택 개발자
+          <span className="text-emerald-700 dark:text-emerald-400">작은 질문을 끝까지 따라가는</span>,
+          7년차 풀스택 개발자
         </motion.p>
 
         {/* 태그 칩 */}

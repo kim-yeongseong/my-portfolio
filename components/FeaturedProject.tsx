@@ -13,9 +13,9 @@ export default function FeaturedProject() {
   if (!project) return null;
 
   const stats = [
-    { icon: Activity, label: "KOSPI + KOSDAQ", value: "3,000+ 종목" },
-    { icon: Zap, label: "하루 스크리닝", value: "6,000건/day" },
-    { icon: Shield, label: "실운영", value: "20~30명 베타" },
+    { icon: Activity, label: "1차 스크리닝", value: "3,000 종목" },
+    { icon: Zap, label: "AI 심층 분석", value: "12 종목/일" },
+    { icon: Shield, label: "베타 운영", value: "20~30명" },
   ];
 
   return (
