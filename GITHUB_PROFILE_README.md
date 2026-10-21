@@ -11,14 +11,14 @@
 ```typescript
 const kimYoungSeong = {
   role: "Full Stack Developer",
-  experience: "6년 2개월",
+  experience: "7년 3개월",
   location: "대한민국 🇰🇷",
-  email: "kim-yeongseong@naver.com",
+  email: "dudtjd7820@naver.com",
 
   currentFocus: {
-    company: "주식회사 국제종합물류",
-    position: "전산/개발팀 선임연구원",
-    project: "통합 물류 시스템 설계 및 개발",
+    company: "판토스 WMS 프로젝트 (LG CNS · 프리랜서)",
+    position: "프리랜서 개발자",
+    project: "판토스 WMS(창고관리시스템) 프로젝트",
   },
 
   techStack: {
@@ -78,8 +78,13 @@ const kimYoungSeong = {
 
 ## 💼 Work Experience
 
+### 🏢 판토스 WMS 프로젝트 (LG CNS · 프리랜서)
+**프리랜서** | 2026.10 ~ 현재
+- 📦 LG CNS를 통해 판토스(Pantos) **WMS(창고관리시스템)** 프로젝트 참여 (NEXACRO + Oracle)
+- 🔄 레거시 **MiPlatform** 화면을 **NEXACRO**로 전환
+
 ### 🏢 주식회사 국제종합물류
-**전산/개발팀 선임연구원** | 2024.11 ~ 현재
+**전산/개발팀 선임연구원** | 2024.11 ~ 2026.07 (1년 9개월)
 - 🚀 **통합 물류 시스템(To-Be)** 풀스택 개발 (Spring Boot 3 + Vue 3)
 - 🏗️ 기술 스택 선정, 아키텍처 설계, 프로젝트 환경 설정 주도
 - 🔧 기존 시스템(AS-IS) 유지보수 및 운영
@@ -108,7 +113,7 @@ const kimYoungSeong = {
 <details>
 <summary><b>🔥 통합 물류 시스템 (To-Be)</b></summary>
 
-- **기간**: 2024.11 ~ 현재
+- **기간**: 2024.11 ~ 2026.07
 - **역할**: 풀스택 개발 (설계부터 개발까지 전 과정 주도)
 - **기술**: Spring Boot 3, Vue 3, TypeScript, JPA, QueryDSL, MySQL, Docker
 - **성과**: 레거시 시스템을 현대적인 웹 기반 시스템으로 전환
@@ -146,7 +151,7 @@ const kimYoungSeong = {
 
 <div align="center">
 
-[![Email](https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:kim-yeongseong@naver.com)
+[![Email](https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:dudtjd7820@naver.com)
 [![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/kim-yeongseong)
 [![Portfolio](https://img.shields.io/badge/Portfolio-3B82F6?style=for-the-badge&logo=google-chrome&logoColor=white)](https://kim-yeongseong.github.io)
 

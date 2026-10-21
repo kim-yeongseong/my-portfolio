@@ -94,24 +94,40 @@ export default function Experience() {
             →
           </div>
 
-          {/* 국제종합물류 — 현재 */}
+          {/* 국제종합물류 */}
+          <div className="flex-1 bg-white dark:bg-gray-800 rounded-lg p-2.5 border border-emerald-100 dark:border-emerald-900/50 min-w-0">
+            <div className="flex items-center gap-1.5 mb-0.5">
+              <Package className="w-3 h-3 text-emerald-600 dark:text-emerald-400 flex-shrink-0" />
+              <p className="text-xs font-bold text-gray-900 dark:text-white truncate">국제종합물류</p>
+            </div>
+            <p className="text-[10px] text-gray-600 dark:text-gray-400 mb-0.5 truncate">포워딩 · B2B SaaS (ILIC)</p>
+            <p className="text-[10px] font-black text-emerald-700 dark:text-emerald-400">
+              2024.11 – 2026.07 <span className="text-gray-500">· 1년 9개월</span>
+            </p>
+          </div>
+
+          <div className="hidden sm:flex items-center justify-center text-emerald-400 dark:text-emerald-600 text-base flex-shrink-0 px-0.5">
+            →
+          </div>
+
+          {/* 판토스 WMS — 현재 */}
           <div className="flex-1 bg-gradient-to-br from-green-50 to-emerald-50 dark:from-emerald-950/60 dark:to-teal-950/60 rounded-lg p-2.5 border-2 border-green-400 dark:border-green-600 shadow-sm min-w-0">
             <div className="flex items-center gap-1.5 mb-0.5">
               <Package className="w-3 h-3 text-green-600 dark:text-green-400 flex-shrink-0" />
-              <p className="text-xs font-bold text-gray-900 dark:text-white truncate">국제종합물류</p>
+              <p className="text-xs font-bold text-gray-900 dark:text-white truncate">판토스 WMS</p>
               <span className="text-[9px] font-black bg-green-500 text-white px-1 py-0.5 rounded-sm animate-pulse flex-shrink-0">
                 현재
               </span>
             </div>
-            <p className="text-[10px] text-gray-600 dark:text-gray-400 mb-0.5 truncate">포워딩 · B2B SaaS (ILIC)</p>
+            <p className="text-[10px] text-gray-600 dark:text-gray-400 mb-0.5 truncate">WMS · LG CNS (프리랜서)</p>
             <p className="text-[10px] font-black text-green-700 dark:text-green-400">
-              2024.11 – 진행 중 <span className="text-gray-500">· 1년 6개월+</span>
+              2026.10 – 진행 중
             </p>
           </div>
         </div>
 
         <p className="text-xs sm:text-[13px] text-gray-700 dark:text-gray-300 leading-relaxed">
-          <span className="font-bold text-emerald-800 dark:text-emerald-300">해상물류 5.3년 + 포워딩 1.5년</span> — 복잡한 물류 비즈니스 로직을
+          <span className="font-bold text-emerald-800 dark:text-emerald-300">해상물류 5.3년 + 포워딩 1.8년</span> — 복잡한 물류 비즈니스 로직을
           코드로 풀어내는 도메인 깊이를 쌓아왔습니다. 특정 산업군을 깊게 아는 것은
           단순 개발 역량을 넘어선 <span className="font-semibold">실무 문제 해결력</span>으로 이어집니다.
         </p>

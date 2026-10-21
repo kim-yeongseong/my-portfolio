@@ -12,13 +12,26 @@ export interface Experience {
 
 export const experiences: Experience[] = [
   {
+    id: "pantos-2026",
+    company: "판토스 WMS 프로젝트",
+    position: "프리랜서 (엠피엘에스 계약 · LG CNS)",
+    period: "2026.10 ~ 진행 중",
+    duration: "진행 중",
+    current: true,
+    description: "LG CNS를 통해 판토스(Pantos) WMS(창고관리시스템) 프로젝트에 프리랜서로 참여. NEXACRO · Oracle 기반으로 개발하며, 레거시 MiPlatform 화면을 NEXACRO로 전환.",
+    responsibilities: [
+      "판토스 WMS(창고관리시스템) 화면 개발 (NEXACRO + Oracle)",
+      "레거시 MiPlatform 기반 화면의 NEXACRO 전환",
+    ],
+    techStack: ["NEXACRO", "Oracle"],
+  },
+  {
     id: "ijl-2024",
     company: "주식회사 국제종합물류",
     position: "전산/개발팀 선임연구원",
-    period: "2024.11 ~ 재직중",
-    duration: "재직중",
-    current: true,
-    description: "물류 포워딩 B2B SaaS 플랫폼(ILIC) 신규 구축에 풀스택으로 참여 및 리드. 3명 소수 팀 환경에서 백엔드·프론트·백오피스를 모두 다루며, 팀에서 Claude Code를 도입해 함께 사용하는 워크플로우를 만들어 쓰고 있음. 현재 MVP 완성 후 내부 테스트 단계. 기술 문서, 기획서, 개발 일지 체계를 직접 작성하여 회사의 연구전담부서 지정에 기여하였고, 선임연구원으로 채택되어 현재 연구 전담으로 근무 중.",
+    period: "2024.11 ~ 2026.07",
+    duration: "1년 9개월",
+    description: "물류 포워딩 B2B SaaS 플랫폼(ILIC) 신규 구축에 풀스택으로 참여 및 리드. 3명 소수 팀 환경에서 백엔드·프론트·백오피스를 모두 다뤘으며, 팀에서 Claude Code를 도입해 함께 사용하는 워크플로우를 만들어 사용. MVP 완성 후 내부 테스트 단계까지 진행. 기술 문서, 기획서, 개발 일지 체계를 직접 작성하여 회사의 연구전담부서 지정에 기여하였고, 선임연구원으로 채택되어 연구 전담으로 근무.",
     responsibilities: [
       "[프로젝트] 포워더·화주·파트너 3개 사용자 타입 지원 멀티테넌트 SaaS (22개 업무 도메인)",
       "[범위] 백엔드 + 백오피스 + 프론트오피스 3개 리포지토리 단독 운영",

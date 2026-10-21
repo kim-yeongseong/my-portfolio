@@ -8,9 +8,9 @@
 ![React](https://img.shields.io/badge/React-18.2.0-61DAFB?style=flat-square&logo=react)
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind%20CSS-3.3-38B2AC?style=flat-square&logo=tailwind-css)
 
-**6년+ 경력의 Full Stack Developer 포트폴리오**
+**7년+ 경력의 Full Stack Developer 포트폴리오**
 
-[🌐 Live Demo](https://kim-yeongseong.vercel.app) | [📧 Contact](mailto:kim-yeongseong@naver.com) | [💼 GitHub](https://github.com/kim-yeongseong)
+[🌐 Live Demo](https://kim-yeongseong.vercel.app) | [📧 Contact](mailto:dudtjd7820@naver.com) | [💼 GitHub](https://github.com/kim-yeongseong)
 
 </div>
 
@@ -30,7 +30,7 @@
 
 ## 🎯 프로젝트 소개
 
-개발자 이력서와 포트폴리오를 겸한 웹사이트입니다. 6년+ 개발 경력, 프로젝트 이력, 기술 스택, 학습 기록 등을 시각적으로 표현했습니다.
+개발자 이력서와 포트폴리오를 겸한 웹사이트입니다. 7년+ 개발 경력, 프로젝트 이력, 기술 스택, 학습 기록 등을 시각적으로 표현했습니다.
 
 ### ✨ 특징
 
@@ -48,7 +48,7 @@
 
 ### 1. Hero 섹션
 - 그라데이션 애니메이션 타이틀
-- 경력 강조 (6년+)
+- 경력 강조 (7년+)
 - CTA 버튼 (경력 보기, GitHub, Email, LinkedIn)
 - 배경 그라데이션 효과
 
@@ -215,7 +215,7 @@ export const profile: Profile = {
   name: "김영성",
   role: "Full Stack Developer",
   bio: "...",
-  email: "kim-yeongseong@naver.com",
+  email: "dudtjd7820@naver.com",
   github: "https://github.com/kim-yeongseong",
 };
 ```
@@ -278,7 +278,7 @@ vercel
 
 **김영성** - Full Stack Developer
 
-- 📧 Email: [kim-yeongseong@naver.com](mailto:kim-yeongseong@naver.com)
+- 📧 Email: [dudtjd7820@naver.com](mailto:dudtjd7820@naver.com)
 - 💼 GitHub: [@kim-yeongseong](https://github.com/kim-yeongseong)
 - 🌐 Portfolio: [https://kim-yeongseong.vercel.app](https://kim-yeongseong.vercel.app)
 
