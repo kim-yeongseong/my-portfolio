@@ -78,10 +78,10 @@ const kimYoungSeong = {
 
 ## 💼 Work Experience
 
-### 🏢 판토스 WMS 프로젝트 (LG CNS · 프리랜서)
+### 🏢 판토스 GSI 통합구축 WMS (LG CNS · 프리랜서)
 **프리랜서** | 2026.10 ~ 현재
-- 📦 LG CNS를 통해 판토스(Pantos) **WMS(창고관리시스템)** 프로젝트 참여 (NEXACRO + Oracle)
-- 🔄 레거시 **MiPlatform** 화면을 **NEXACRO**로 전환
+- 📦 LG CNS를 통해 판토스(Pantos) **GSI 통합구축 WMS(창고관리시스템)** 프로젝트 참여 (NEXACRO + Oracle)
+- 🔄 레거시 **MiPlatform** 기반을 **NEXACRO**로 전환
 
 ### 🏢 주식회사 국제종합물류
 **전산/개발팀 선임연구원** | 2024.11 ~ 2026.07 (1년 9개월)

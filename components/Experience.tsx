@@ -119,7 +119,7 @@ export default function Experience() {
                 현재
               </span>
             </div>
-            <p className="text-[10px] text-gray-600 dark:text-gray-400 mb-0.5 truncate">WMS · LG CNS (프리랜서)</p>
+            <p className="text-[10px] text-gray-600 dark:text-gray-400 mb-0.5 truncate">GSI 통합구축 · LG CNS</p>
             <p className="text-[10px] font-black text-green-700 dark:text-green-400">
               2026.10 – 진행 중
             </p>

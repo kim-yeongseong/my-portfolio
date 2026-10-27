@@ -13,15 +13,15 @@ export interface Experience {
 export const experiences: Experience[] = [
   {
     id: "pantos-2026",
-    company: "판토스 WMS 프로젝트",
+    company: "판토스 GSI 통합구축 WMS",
     position: "프리랜서 (엠피엘에스 계약 · LG CNS)",
     period: "2026.10 ~ 진행 중",
     duration: "진행 중",
     current: true,
-    description: "LG CNS를 통해 판토스(Pantos) WMS(창고관리시스템) 프로젝트에 프리랜서로 참여. NEXACRO · Oracle 기반으로 개발하며, 레거시 MiPlatform 화면을 NEXACRO로 전환.",
+    description: "LG CNS를 통해 판토스(Pantos) GSI 통합구축 WMS(창고관리시스템) 프로젝트에 프리랜서로 참여. NEXACRO · Oracle 기반으로 개발하며, 레거시 MiPlatform을 NEXACRO로 전환.",
     responsibilities: [
-      "판토스 WMS(창고관리시스템) 화면 개발 (NEXACRO + Oracle)",
-      "레거시 MiPlatform 기반 화면의 NEXACRO 전환",
+      "판토스 GSI WMS(창고관리시스템) 통합 구축 개발 (NEXACRO + Oracle)",
+      "레거시 MiPlatform 기반의 NEXACRO 전환",
     ],
     techStack: ["NEXACRO", "Oracle"],
   },
