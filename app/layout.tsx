@@ -60,9 +60,6 @@ export const metadata: Metadata = {
       "max-snippet": -1,
     },
   },
-  verification: {
-    google: "verification_token", // Google Search Console 등록 후 추가
-  },
 };
 
 export default function RootLayout({
